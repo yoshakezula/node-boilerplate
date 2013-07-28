@@ -27,7 +27,7 @@ if 'development' == app.get 'env'
     src: __dirname + '/public'
     compile: compile
 
-app.get '/', (req, res) -> res.send 'hello world', title:'Node Boilerplate'
+app.get '/', (req, res) -> res.render 'index', title:'Node Boilerplate'
 
 port = process.env.PORT || 3000
 http.createServer(app).listen port

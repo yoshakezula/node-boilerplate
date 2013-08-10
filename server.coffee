@@ -3,6 +3,7 @@ path = require "path"
 http = require 'http'
 stylus = require 'stylus'
 schema = require './db'
+mongoose = require 'mongoose'
 nib = require 'nib'
 app = express()
 

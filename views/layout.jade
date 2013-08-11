@@ -25,9 +25,8 @@ html(xmlns="http://www.w3.org/1999/xhtml", xmlns:og="http://ogp.me/ns#", xmlns:f
       ga('send', 'pageview');
 
   body
-    .container-fluid
-      .row-fluid
-        block content
+    .container
+      block content
 
     if settings.env == 'development'
       script(src="js/libs/jquery-2.0.3.min.js")
